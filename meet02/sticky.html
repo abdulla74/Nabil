@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed position</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: black 1px solid;
+            margin: 0px auto;
+        }
+        .satu {
+            background-color: lightcoral;
+        }
+        .dua {
+            height: 50px;
+            width: 100%;
+            background-color: lightgoldenrodyellow;
+            position: fixed;
+
+            top: 0;
+            left: 0;
+        }
+        .tiga {
+            background-color: lightgreen;
+        }
+        .circle {
+            position: fixed;
+            height: 50px;
+            width: 50px;
+            background-color: greenyellow;
+            border-radius: 50%;
+            display: flex;
+            right: 50px;
+            bottom: 50px;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper {
+            top: 50px;
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border: purple 10px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dua"></div>
+        </nav>
+        <div class="information"></div>
+    </header>
+    <div class="wrapper">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+
+    </div>
+    <div class="circle">
+        <i class='bx bx-user'></i>
+    </div>
+
+</body>
+</html>
